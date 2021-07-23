@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>炎派</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .pic{
+            text-align: center;
+        }
+        header{
+            height: 40px;
+            padding: 6px 10px;
+            display: flex;
+            justify-content: space-between;
+            background-color:#2c3e50;
+        }
+        nav a{
+            color: cornsilk;
+            text-decoration: none;
+            line-height: 40px;
+            font-size: 12px;
+        }
+        nav a:hover{
+            background-color: #fa0;
+        }
+        .path{
+            display: flex;
+        }
+        .path li{
+            padding: 10px;
+            list-style: none;
+        }
+        .path li a{
+            color:#aaa;
+            text-decoration: none;
+        }
+        .itemgroup{
+            width:100%;
+            max-width:1400px;
+            margin:auto;
+        }
+        .item.pic img,.logocontainer img,.bannercontainer img{
+            width: 100%;
+        }
+        h2{
+            text-align: center;
+            font-size: 50px;
+        }
+        .title p{
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+        .text p{
+            padding: 10px;
+            line-height: 1.5;
+        }
+        .mainproduct{
+            background-color:#f6e58d;
+        }
+        footer{
+            text-align: center;
+            background-color:#000;
+            color: #888;
+            padding: 20px 0;
+        }
+        /* 平板以上設定 */
+        @media screen and (min-width:768px){
+         .itemgroup .item .pic{
+             width: 182px;
+         }
+         nav a{
+            color: cornsilk;
+            text-decoration: none;
+            line-height: 40px;
+            padding: 15px;
+            font-size: 20px;
+        }
+         .itemgroup{
+            display: flex;
+        }
+        .mainproduct .item{
+            display: flex;
+        }
+        .mainproduct .item .pic,
+        .mainproduct .item .text{
+            width: 50%;
+        }
+        .mainproduct .item .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 2;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logocontainer">
+           <a href="#"><img src="https://picsum.photos/100/40" alt="炎派"></a> 
+        </div>
+        <div class="navbarcontainer">
+            <nav>
+              <a href="">about us</a>
+              <a href="">products</a>
+              <a href="">service</a>
+              <a href="">connect with us</a>
+              <a href="">web map</a>
+            </nav>
+        </div>
+    </header>
+    <div class="bannercontainer">
+        <img src="https://picsum.photos/1400/500" alt="">
+    </div>
+    <!-- 總部與最新消息 -->
+    <ul class="path">
+        <li><a href="">home</a></li>
+        <li><a href="">latest news</a></li>
+        <li><a href="">mainland</a></li>
+    </ul>
+    <main>
+        <!-- 門派簡介 -->
+        <div class="about">
+            <div class="wrap">
+                <div class="title">
+                    <h2>關於我們</h2>
+                    <p>我們是鬥氣大陸最強的門派 歡迎各位煉藥師及鬥者加入我們</p>
+                </div> 
+            </div>
+        </div>
+        <div class="itemgroup">
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/250/200?/random=1" alt="">
+                </div>
+                <div class="text">
+                    <h2>藥老</h2>
+                    <p>炎派首席煉藥師 一手煉藥術出神入化 門下弟子法老已出師在炎派中擔任煉藥師教授一職</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/250/200?/random=2" alt="">
+                </div>
+                <div class="text">
+                    <h2>海老</h2>
+                    <p>冰系鬥氣的代言人 冰氣凌人 喊水成冰 擁有冰系天賦的鬥氣朋友們快快加入炎派 我們有冰系鬥氣的至高點海老 現在加入就能獲得海老一對一指導</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/250/200?/random=3" alt="">
+                </div>
+                <div class="text">
+                    <h2>法老</h2>
+                    <p>藥老徒弟 與藥老閒雲野鶴的性格不同 法老致力於普及煉藥術 希望炎派下的人人都是煉藥術好手</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/250/200?/random=4" alt="">
+                </div>
+                <div class="text">
+                    <h2>加老</h2>
+                    <p>沙之操縱者 掌握土系鬥氣 最喜歡與海老切磋 兩人實力不分軒輊 擁有土系天賦的鬥氣朋友快快前來尋找加老修煉</p>
+                </div>
+            </div>
+        </div>
+        <!-- 核心主打商品 -->
+        <div class="mainproduct">
+            <div class="wrap">
+                <div class="itemgroup">
+                    <div class="item">
+                        <div class="pic">
+                            <img src="https://picsum.photos/380/200?/random=5" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>五紋聖靈丹</h2>
+                            <p>服用後能100%直接從鬥皇突破到鬥宗強者 無副作用 煉製難度極高 在本派煉藥師下得以量產 現在邀請五位鬥皇入派即贈送一枚</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>     
+        </div>
+        <!--服務項目-->
+        <div class="about">
+            <div class="wrap">
+                <div class="title">
+                    <h2>服務項目</h2>
+                    <p>炎派提供運鏢 煉丹 鬥技教學 煉藥課程</p>
+                </div> 
+            </div>
+        </div>
+        <div class="itemgroup">
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/250/200?/random=21" alt="">
+                </div>
+                <div class="text">
+                    <h2>運鏢</h2>
+                    <p>炎派提供運鏢服務 客戶可指定護送者等級 提醒您重要貨物可以委託鬥宗以上強者護送</p>
+                </div>    
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/250/200?/random=22" alt="">
+                </div>
+                <div class="text">
+                    <h2>煉丹</h2>
+                    <p>還在想從魔獸身上打到的藥材如何處理嗎?炎派提供為客戶煉丹的服務 客戶只需將所需藥材提供 加上一枚對應等級的魔核 本派便會在煉製完成時將丹藥送至您的手裡</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/250/200?/random=23" alt="">
+                </div>
+                <div class="text">
+                    <h2>鬥技教學</h2>
+                    <p>剛從市集獲得一門新鬥技卻不知從何練起嗎?炎派強者提供你修練鬥技的秘訣 只需支付對應品階的功法x1</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/250/200?/random=24" alt="">
+                </div>
+                <div class="text">
+                    <h2>煉丹課程</h2>
+                    <p>作為這片大陸上最強門派 最不可或缺的就是強大的煉藥師支持 我們招收有天賦的鬥者 在學成後須為炎派服務1年 然後便可出去遊歷</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+      &copy; copyright 2021 by Tim wu
+    </footer>
+</body>
+</html>
